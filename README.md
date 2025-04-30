@@ -39,16 +39,21 @@ scikit-learn
 matplotlib
 plotly
 Getting Started
-1. Clone Repository
+
+
+#1. Clone Repository
 bash
-git clone https://github.com/yourusername/asset-trend-predictor.git
-cd asset-trend-predictor
-2. Install Dependencies
+git clone https://github.com/DevShlok/StockMint.git
+cd StockMint
+
+#2. Install Dependencies
 It's recommended to use a virtual environment.
 
 bash
 pip install -r requirements.txt
-3. Place Model Files
+
+
+#3. Place Model Files
 Place your model files in the root directory:
 
 Stock_Price_Prediction.h5 (for stocks)
@@ -57,13 +62,12 @@ Crypto_Model.keras (for crypto)
 
 (You can use your own pre-trained models.)
 
-4. Run the App
+#4. Run the App
 bash
 python app.py
 The app will be available at http://127.0.0.1:5000/.
 
-Usage
-Open the web app in your browser.
+
 
 Select Asset Type: Stock or Cryptocurrency.
 
@@ -75,30 +79,49 @@ Click Analyze.
 
 View historical, EMA, and prediction charts, as well as descriptive statistics and dataset download options.
 
-Project Structure
+#Project Structure
 text
 .
 ├── app.py
-├── templates/
+
+
+├── templates
+
+
 │   └── index.html
+
+
 ├── static/
+
+
 │   └── ... (for generated CSV downloads)
+
+
 ├── requirements.txt
+
+
 ├── Stock_Price_Prediction.h5
+
+
 ├── Crypto_Model.keras
+
+
 └── README.md
-Customization
+
+
+#Customization
+
+
 To use different models, swap the Stock_Price_Prediction.h5 or Crypto_Model.keras files.
 
 Charts are sized to 900x350px for both Plotly and Matplotlib for consistency.
 
 You can adjust theme/colors in index.html or Matplotlib code sections.
 
-License
-MIT License (or specify your license)
 
-Credits
-Developed by Shlok Shukla
+
+
+#Developed by Shlok Shukla
 
 Powered by Flask, Keras, yfinance, Matplotlib, and Plotly
 
